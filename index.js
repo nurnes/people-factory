@@ -8,5 +8,6 @@ function handle(event){
     const color = form.nameColor.value
     document.querySelector('h1').textContent = name
     document.querySelector('h1').style = "color:" + color
+    document.getElementById('emptyParagraph').textContent = "Yay! You are " + name + " in " + color
 }
 personForm.addEventListener('submit', handle)
